@@ -61,7 +61,7 @@
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp F>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         PlusMinus: PlusMinus {
@@ -70,14 +70,14 @@
             #binding-cells = <0>;
             bindings = <&kp PLUS>, <&kp MINUS>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         AsteriskSlash: AsteriskSlash {
             compatible = "zmk,behavior-tap-dance";
             label = "ASTERISKSLASH";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             bindings = <&kp ASTRK>, <&kp SLASH>;
         };
 
@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "COLONSEMICOLON";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             bindings = <&kp COLON>, <&kp SEMI>;
         };
     };
@@ -96,8 +96,8 @@
         default_layer {
             bindings = <
 &kp Q           &kp L          &kp U         &none     &none                                             &kp F        &tdWandF  &kp R  &kp Y  &kp P
-&tdPeriodComma  &kp I          &kp A         &kp O     &kp MINUS    &kp LEFT_WIN        &kp LANG1        &kp K        &kp T     &kp N  &kp S  &kp H
-&kp Z           &kp X          &kp C         &kp E     &kp V        &to 6               &kp LANG2        &kp G        &kp D     &kp M  &kp J  &kp B
+&tdPeriodComma  &kp I          &kp A         &kp O     &kp MINUS    &to 6               &kp LANG1        &kp K        &kp T     &kp N  &kp S  &kp H
+&kp Z           &kp X          &kp C         &kp E     &kp V        &kp LEFT_WIN        &kp LANG2        &kp G        &kp D     &kp M  &kp J  &kp B
 &kp ESC         &mt LCTRL TAB  &kp LEFT_ALT  &kp BSPC  &lt 1 SPACE  &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &lt 3 ENTER                          &kp DEL
             >;
 
