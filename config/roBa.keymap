@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PLUSMINUS";
             #binding-cells = <0>;
-            bindings = <&kp PLUS>, <&kp MINUS>;
+            bindings = <&kp SEMI>, <&kp MINUS>;
 
             tapping-term-ms = <150>;
         };
@@ -78,7 +78,7 @@
             label = "ASTERISKSLASH";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&kp ASTRK>, <&kp SLASH>;
+            bindings = <&kp COLON>, <&kp SLASH>;
         };
 
         ColonSemicolon: ColonSemicolon {
@@ -86,7 +86,7 @@
             label = "COLONSEMICOLON";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&kp COLON>, <&kp SEMI>;
+            bindings = <&kp APOS>, <&kp SEMI>;
         };
     };
 
@@ -106,10 +106,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                  &kp UNDER        &kp NUMBER_7  &kp NUMBER_8  &kp N9        &PlusMinus
-&trans  &trans  &trans  &trans  &trans  &kp MINUS      &none            &kp AT           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &AsteriskSlash
-&trans  &trans  &trans  &trans  &trans  &kp ASTRK      &trans           &ColonSemicolon  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans         &kp RIGHT_SHIFT  &trans                                                     &kp F12
+&trans  &trans  &trans  &trans  &trans                               &kp LS(BACKSLASH)  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &PlusMinus
+&trans  &trans  &trans  &trans  &trans  &none       &none            &kp LEFT_BRACKET   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &AsteriskSlash
+&trans  &trans  &trans  &trans  &trans  &none       &trans           &ColonSemicolon    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans      &kp RIGHT_SHIFT  &trans                                                       &none
             >;
         };
 
@@ -127,7 +127,7 @@
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &none                    &none                        &trans  &trans  &trans  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
