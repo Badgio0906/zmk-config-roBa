@@ -70,14 +70,14 @@
             #binding-cells = <0>;
             bindings = <&kp SEMI>, <&kp MINUS>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         AsteriskSlash: AsteriskSlash {
             compatible = "zmk,behavior-tap-dance";
             label = "ASTERISKSLASH";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp COLON>, <&kp SLASH>;
         };
 
@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "COLONSEMICOLON";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp APOS>, <&kp SEMI>;
         };
     };
