@@ -88,6 +88,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp APOS>, <&kp SEMI>;
         };
+
+        TdLang1Lang2: TdLang1Lang2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDLANG1LANG2";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1>, <&kp LANG2>;
+        };
     };
 
     keymap {
@@ -95,7 +102,7 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp L          &kp U         &none           &none                                         &kp F            &tdWandF  &kp R  &kp Y  &kp P
+&kp Q           &kp L          &kp U         &none           &none                                         &TdLang1Lang2    &tdWandF  &kp R  &kp Y  &kp P
 &tdPeriodComma  &kp I          &kp A         &kp O           &kp MINUS      &to 6             &kp LANG1    &kp K            &kp T     &kp N  &kp S  &kp H
 &kp Z           &kp X          &kp C         &kp E           &kp V          &kp LEFT_WIN      &kp LANG2    &kp G            &kp D     &kp M  &kp J  &kp B
 &kp ESC         &mt LCTRL TAB  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp BACKSPACE  &lt 1 SPACE       &lt 3 ENTER  &kp RIGHT_SHIFT                          &kp DEL
