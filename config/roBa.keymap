@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PLUSMINUS";
             #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp MINUS>;
+            bindings = <&kp LS(SEMI)>, <&kp MINUS>;
 
             tapping-term-ms = <200>;
         };
@@ -78,7 +78,7 @@
             label = "ASTERISKSLASH";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp COLON>, <&kp SLASH>;
+            bindings = <&kp LS(SINGLE_QUOTE)>, <&kp SLASH>;
         };
 
         ColonSemicolon: ColonSemicolon {
