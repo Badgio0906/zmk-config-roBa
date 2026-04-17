@@ -12,9 +12,19 @@
     combos {
         compatible = "zmk,combos";
 
-        shift_tab {
+        Alt_tab {
             bindings = <&kp LA(TAB)>;
             key-positions = <12 13>;
+        };
+
+        Ctrl+Z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <12 11>;
+        };
+
+        Ctrl+P {
+            bindings = <&kp LC(P)>;
+            key-positions = <14 13>;
         };
     };
 
