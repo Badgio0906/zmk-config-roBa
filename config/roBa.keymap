@@ -32,7 +32,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&kp LEFT_WIN &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -92,10 +92,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp L          &kp U         &kp LC(C)       &kp LC(V)                                     &TdLang1Lang2    &tdWandF  &kp R  &kp Y  &kp P
-&tdPeriodComma  &kp I          &kp A         &kp O           &kp MINUS      &to 6             &kp LANG1    &kp K            &kp T     &kp N  &kp S  &kp H
-&kp Z           &kp X          &kp C         &kp E           &kp V          &kp LEFT_WIN      &kp LANG2    &kp G            &kp D     &kp M  &kp J  &kp B
-&kp ESC         &mt LCTRL TAB  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp BACKSPACE  &lt 1 SPACE       &lt 3 ENTER  &kp RIGHT_SHIFT                          &kp DEL
+&kp Q           &kp L          &kp U         &kp LC(C)       &kp LC(V)                                            &TdLang1Lang2    &tdWandF  &kp R  &kp Y  &kp P
+&tdPeriodComma  &kp I          &kp A         &kp O           &kp MINUS      &to 6             &kp LG(LS(S))       &kp K            &kp T     &kp N  &kp S  &kp H
+&kp Z           &kp X          &kp C         &kp E           &kp V          &kp LEFT_WIN      &kp LC(LS(ESCAPE))  &kp G            &kp D     &kp M  &kp J  &kp B
+&kp ESC         &mt LCTRL TAB  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp BACKSPACE  &lt 1 SPACE       &lt 3 ENTER         &kp RIGHT_SHIFT                          &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -103,10 +103,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                               &kp LS(BACKSLASH)  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &PlusMinus
-&trans  &trans  &trans  &trans  &trans  &none       &none            &kp LEFT_BRACKET   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &AsteriskSlash
-&trans  &trans  &trans  &trans  &trans  &none       &trans           &ColonSemicolon    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RIGHT_SHIFT  &trans                                                       &none
+&trans   &trans   &trans  &trans  &trans                                &kp LS(BACKSLASH)  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &PlusMinus
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &none       &none            &kp LEFT_BRACKET   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &AsteriskSlash
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none       &kp RIGHT_ALT    &ColonSemicolon    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&kp F11  &kp F12  &trans  &trans  &trans   &trans      &kp RIGHT_SHIFT  &trans                                                       &none
             >;
         };
 
