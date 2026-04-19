@@ -1,10 +1,10 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include "roBa.dtsi"
+#include <input/processors.dtsi>
 
+#include "roBa.dtsi"
 &default_transform {
     col-offset = <6>;
 };
-
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
@@ -14,17 +14,6 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
-
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        automouse-layer = <4>;
-        scroll-layers = <5>;
-
-    };
-};
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -33,7 +22,6 @@
                 <NRF_PSEL(SPIM_MISO, 0, 4)>;
         };
     };
-
     spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
@@ -43,9 +31,7 @@
         };
     };
 };
-
 &xiao_serial { status = "disabled"; };
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -53,7 +39,6 @@
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
-
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,pmw3610-alt";
@@ -67,5 +52,15 @@
         y-input-code = <INPUT_REL_Y>;
     };
 };
+/ {
+    zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+    };
 
-
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 500>;
+    };
+};
