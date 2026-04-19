@@ -17,12 +17,12 @@
             key-positions = <12 13>;
         };
 
-        Ctrl+Z {
+        Ctrl_Z {
             bindings = <&kp LC(Z)>;
             key-positions = <12 11>;
         };
 
-        Ctrl+P {
+        Ctrl_P {
             bindings = <&kp LC(P)>;
             key-positions = <14 13>;
         };
