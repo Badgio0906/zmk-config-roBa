@@ -6,5 +6,7 @@
     kscan0: kscan0 {
         compatible = "zmk,kscan-mock";
         events = <0>;
+        rows = <1>;      // ← 追加
+        columns = <1>;   // ← 追加
     };
 };
