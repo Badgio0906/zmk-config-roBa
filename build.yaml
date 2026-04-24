@@ -26,3 +26,5 @@ include:
     shield: roBa_dongle prospector_adapter
   - board: xiao_ble//zmk
     shield: settings_reset
+  - board: xiao_ble/nrf52840/zmk    # ← ドングル用追加
+    shield: settings_reset
