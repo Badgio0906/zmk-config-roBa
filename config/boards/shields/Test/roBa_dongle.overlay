@@ -5,10 +5,3 @@
         zmk,kscan = &kscan0;
     };
 };
-
-&kscan0 {                           // ← &をつけて既存ノードを上書き
-    compatible = "zmk,kscan-mock";
-    events = <0>;
-    rows = <1>;
-    columns = <1>;
-};
