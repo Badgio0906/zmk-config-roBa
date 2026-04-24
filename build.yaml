@@ -22,5 +22,5 @@ include:
     shield: roBa_R
   - board: xiao_ble//zmk
     shield: roBa_L
-  - board: xiao_ble
+  - board: xiao_ble/nrf52840/zmk
     shield: roBa_dongle prospector_adapter
