@@ -24,7 +24,11 @@ include:
     shield: roBa_L
   - board: xiao_ble/nrf52840/zmk
     shield: roBa_dongle prospector_adapter
+  - board: raytac_mdbt50q_rx          # ← 追加
+    shield: roBa_dongle
   - board: xiao_ble//zmk
     shield: settings_reset
-  - board: xiao_ble/nrf52840/zmk    # ← ドングル用追加
+  - board: xiao_ble/nrf52840/zmk
+    shield: settings_reset
+  - board: raytac_mdbt50q_rx          # ← 追加
     shield: settings_reset
