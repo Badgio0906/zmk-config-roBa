@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/badjeff
     - name: carrefinho
       url-base: https://github.com/carrefinho
-    - name: rschenk                        # ← 追加
-      url-base: https://github.com/rschenk # ← 追加
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,8 +17,5 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: feat/new-status-screens
-    - name: zmk-component-raytac-dongle    # ← 追加
-      remote: rschenk                      # ← 追加
-      revision: main                       # ← 追加
   self:
     path: config
