@@ -1,5 +1,8 @@
 config SHIELD_ROBA_R
 def_bool $(shields_list_contains,roBa_R)
 
+config SHIELD_ROBA_R_COROPIT
+def_bool $(shields_list_contains,roBa_R_coropit)
+
 config SHIELD_ROBA_L
 def_bool $(shields_list_contains,roBa_L)
