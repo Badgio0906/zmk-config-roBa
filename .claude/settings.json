@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh run *)",
+      "Bash(where gh *)",
+      "PowerShell(gh run list --repo Badgio0906/zmk-config-roBa --limit 5)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:zmk.dev)"
+    ]
+  }
+}
