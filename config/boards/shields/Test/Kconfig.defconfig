@@ -24,6 +24,16 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if SHIELD_ROBA_R_PERIPH
+
+config ZMK_KEYBOARD_NAME
+	default "roBa_R"
+
+config ZMK_SPLIT
+	default y
+
+endif
+
 if SHIELD_ROBA_L
 
 config ZMK_KEYBOARD_NAME
