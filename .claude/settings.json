@@ -8,7 +8,13 @@
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:zmk.dev)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "PowerShell(gh run list --limit 3 --repo Badgio0906/zmk-config-roBa)",
+      "Bash(git ls-tree *)",
+      "WebFetch(domain:note.com)"
     ]
   }
 }
