@@ -54,9 +54,14 @@
 };
 
 / {
-    /* input-processors なし: 生イベントをそのまま central に転送してテスト */
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
+    split_inputs: split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        /* Split input: peripheral forwards raw trackball events to central via BLE */
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            device = <&trackball>;
+        };
     };
 };

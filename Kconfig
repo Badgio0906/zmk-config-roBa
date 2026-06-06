@@ -1,0 +1,6 @@
+# Provide a typed definition for LV_DISP_DEF_REFR_PERIOD so that
+# prospector-zmk-module's Kconfig.defconfig can safely override its default
+# without triggering a "defined without a type" Kconfig warning.
+config LV_DISP_DEF_REFR_PERIOD
+	int
+	default 30
