@@ -14,7 +14,8 @@
       "Bash(git push *)",
       "PowerShell(gh run list --limit 3 --repo Badgio0906/zmk-config-roBa)",
       "Bash(git ls-tree *)",
-      "WebFetch(domain:note.com)"
+      "WebFetch(domain:note.com)",
+      "Bash(git checkout *)"
     ]
   }
 }
