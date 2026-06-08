@@ -5,6 +5,20 @@
 
 ---
 
+## キーマップ変更時の必須作業
+
+`config/roBa.keymap` の `default_layer` を変更するたびに、以下を必ず実施すること。
+
+1. **README.md のキーマップ図を更新する**
+   - `README.md` の「キーマップ (Default Layer)」セクションの ASCII 図を実態と合わせる
+   - `keymap-drawer/roBa.yaml` も同様に更新する（SVG 再生成の元データ）
+
+2. **cool642tb が同じ変更を受ける場合**
+   - `zmk-config-cool642tb/config/cool642tb.keymap` も同様に変更する
+   - `zmk-config-cool642tb/README.md` のキーマップ図も更新する
+
+---
+
 ## ハードウェア構成
 
 | 部位 | ボード | 役割 |

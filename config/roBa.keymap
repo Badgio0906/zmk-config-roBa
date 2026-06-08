@@ -26,6 +26,11 @@
             bindings = <&kp LC(P)>;
             key-positions = <14 13>;
         };
+
+        Ctrl_S {
+            bindings = <&kp LC(S)>;
+            key-positions = <10 14>;
+        };
     };
 
     macros {
@@ -92,8 +97,8 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp L          &kp U         &kp LC(C)       &kp LC(V)                                            &TdLang1Lang2    &tdWandF  &kp H  &kp Y  &kp P
-&tdPeriodComma  &kp I          &kp A         &kp O           &kp MINUS      &kp LG(LS(S))       &kp LEFT_WIN       &kp K            &kp T     &kp N  &kp S  &kp R
+&kp Q           &kp L          &kp U         &kp LC(C)       &kp LC(V)                                            &TdLang1Lang2    &tdWandF  &kp R  &kp Y  &kp P
+&tdPeriodComma  &kp I          &kp A         &kp O           &kp MINUS      &kp LG(LS(S))       &kp LEFT_WIN       &kp K            &kp T     &kp N  &kp S  &kp H
 &kp Z           &kp X          &kp C         &kp E           &kp V          &kp LC(LS(ESCAPE))  &kp LEFT_WIN       &kp G            &kp D     &kp M  &kp J  &kp B
 &kp ESC         &mt LCTRL TAB  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp BACKSPACE  &lt 1 SPACE       &lt 3 ENTER         &kp RIGHT_SHIFT                          &kp DEL
             >;

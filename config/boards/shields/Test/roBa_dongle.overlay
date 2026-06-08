@@ -45,6 +45,6 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&zip_temp_layer 4 500>;
+        input-processors = <&zip_temp_layer 4 500>, <&zip_xy_scaler 1 2>;
     };
 };
