@@ -29,7 +29,7 @@ layers:
   - E
   - V
   - Ctl+Sft+ESCAPE
-  - LEFT WIN
+  - ''
   - G
   - D
   - M
@@ -50,7 +50,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+\
+  - ':'
   - '7'
   - '8'
   - '9'
@@ -62,7 +62,7 @@ layers:
   - F5
   - ''
   - ''
-  - '['
+  - _
   - '4'
   - '5'
   - '6'
@@ -74,7 +74,7 @@ layers:
   - F10
   - ''
   - RIGHT ALT
-  - '&ColonSemicolon'
+  - '~'
   - '1'
   - '2'
   - '3'

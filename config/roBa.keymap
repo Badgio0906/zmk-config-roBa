@@ -99,7 +99,7 @@
             bindings = <
 &kp Q           &kp L          &kp U         &kp LC(C)       &kp LC(V)                                            &TdLang1Lang2    &tdWandF  &kp R  &kp Y  &kp P
 &tdPeriodComma  &kp I          &kp A         &kp O           &kp MINUS      &kp LG(LS(S))       &kp LEFT_WIN       &kp K            &kp T     &kp N  &kp S  &kp H
-&kp Z           &kp X          &kp C         &kp E           &kp V          &kp LC(LS(ESCAPE))  &kp LEFT_WIN       &kp G            &kp D     &kp M  &kp J  &kp B
+&kp Z           &kp X          &kp C         &kp E           &kp V          &kp LC(LS(ESCAPE))  &none              &kp G            &kp D     &kp M  &kp J  &kp B
 &kp ESC         &mt LCTRL TAB  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp BACKSPACE  &lt 1 SPACE       &lt 3 ENTER         &kp RIGHT_SHIFT                          &kp DEL
             >;
 
@@ -108,9 +108,9 @@
 
         FUNCTION {
             bindings = <
-&trans   &trans   &trans  &trans  &trans                                &kp LS(BACKSLASH)  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &PlusMinus
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &none       &none            &kp LEFT_BRACKET   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &AsteriskSlash
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none       &kp RIGHT_ALT    &ColonSemicolon    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans   &trans   &trans  &trans  &trans                                &kp APOS           &kp NUMBER_7  &kp NUMBER_8  &kp N9        &PlusMinus
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &none       &none            &kp LS(INT1)       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &AsteriskSlash
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none       &kp RIGHT_ALT    &kp LS(EQUAL)      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
 &kp F11  &kp F12  &trans  &trans  &trans   &trans      &kp RIGHT_SHIFT  &trans                                                       &none
             >;
         };
