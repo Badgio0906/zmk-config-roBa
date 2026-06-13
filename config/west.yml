@@ -2,16 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # - name: carrefinho
-    #   url-base: https://github.com/carrefinho
+    - name: kumamuk-git
+      url-base: https://github.com/kumamuk-git
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3-branch
       import: app/west.yml
-    # prospector-zmk-module は Zephyr 4.1 (ZMK main) 専用。v0.3-branch では除外
-    # - name: prospector-zmk-module
-    #   remote: carrefinho
-    #   revision: feat/new-status-screens
+    - name: zmk-pmw3610-driver
+      remote: kumamuk-git
+      revision: main
   self:
     path: config
