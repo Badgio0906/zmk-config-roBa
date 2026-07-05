@@ -124,7 +124,7 @@
 &kp O
 &kp MINUS
 &kp LG(LS(S))
-&kp LEFT_WIN
+&kp RGUI
 &kp K
 &kp T
 &kp N
@@ -136,7 +136,7 @@
 &kp E
 &kp V
 &kp LC(LS(ESCAPE))
-&kp LEFT_WIN
+none
 &kp G
 &kp D
 &kp M
