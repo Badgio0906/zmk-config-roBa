@@ -136,7 +136,7 @@
 &kp E
 &kp V
 &kp LC(LS(ESCAPE))
-none
+&none
 &kp G
 &kp D
 &kp M
