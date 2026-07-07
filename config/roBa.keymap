@@ -46,6 +46,14 @@
     };
 
     behaviors {
+		testHT: testHT {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			flavor = "tap-preferred";
+			tapping-term-ms = <200>;
+			bindings = <&kp>, <&kp>;
+		};
+
 lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -136,7 +144,7 @@ lt_to_layer_0: lt_to_layer_0 {
 &kp E
 &kp V
 &kp LC(LS(ESCAPE))
-&none
+&testHT LSHIFT A
 &kp G
 &kp D
 &kp M
