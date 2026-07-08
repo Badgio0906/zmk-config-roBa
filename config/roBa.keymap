@@ -12,29 +12,34 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Alt_tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        Ctrl_Z {
-            bindings = <&kp LC(Z)>;
-            key-positions = <12 11>;
-        };
-
-        Ctrl_P {
-            bindings = <&kp LC(P)>;
-            key-positions = <14 13>;
-        };
-
-        Ctrl_S {
-            bindings = <&kp LC(S)>;
-            key-positions = <10 14>;
-        };
-    };
+    	combos {
+		compatible = "zmk,combos";
+		Alt_tab {
+			timeout-ms = <50>;
+			key-positions = <12 13>;
+			bindings = <&kp LA(TAB)>;
+		};
+		Ctrl_Z {
+			timeout-ms = <50>;
+			key-positions = <12 11>;
+			bindings = <&kp LC(Z)>;
+		};
+		Ctrl_P {
+			timeout-ms = <50>;
+			key-positions = <14 13>;
+			bindings = <&kp LC(P)>;
+		};
+		Ctrl_S {
+			timeout-ms = <50>;
+			key-positions = <10 14>;
+			bindings = <&kp LC(S)>;
+		};
+		Lang2 {
+			timeout-ms = <50>;
+			key-positions = <19 20>;
+			bindings = <&kp LANG2>;
+		};
+	};
 
     macros {
         to_layer_0: to_layer_0 {
