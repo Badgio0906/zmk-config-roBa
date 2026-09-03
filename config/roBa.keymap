@@ -12,7 +12,7 @@
 };
 
 / {
-    			combos {
+    				combos {
 		compatible = "zmk,combos";
 		Alt_tab {
 			timeout-ms = <50>;
@@ -43,11 +43,6 @@
 			timeout-ms = <50>;
 			key-positions = <18 19>;
 			bindings = <&kp LANG1>;
-		};
-		PClock {
-			timeout-ms = <50>;
-			key-positions = <0 1>;
-			bindings = <&kp WIN(L)>;
 		};
 	};
 
