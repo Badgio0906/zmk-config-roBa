@@ -17,6 +17,7 @@
 		Alt_tab {
 			timeout-ms = <50>;
 			key-positions = <12 13>;
+			layers = <0 1 2 3 4 5>;
 			bindings = <&kp LA(TAB)>;
 		};
 		Ctrl_Z {
